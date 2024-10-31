@@ -1,0 +1,104 @@
+/* Container for the table */
+.stock-table-container {
+    margin: 50px auto; /* Centering the table */
+    width: 90%; /* Adjust the table width */
+    text-align: center;
+}
+
+/* Add a new class for the table overflow */
+.table-scroll-container {
+    max-height: 550px; /* Set the desired height for the table (increased) */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid #ccc; /* Optional: Adds a border to the container */
+}
+
+/* Filter Bar Styling */
+.filter-bar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 40px;
+    justify-content: flex-start; /* Align items to the left */
+    width: 100%; /* Full width of the container */
+    margin-top: 40px;
+}
+
+.filter-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px; /* Space between the text and search bar */
+}
+
+/* Search Container */
+.search-container {
+    position: relative; /* For positioning the icon */
+    width: 350px; /* Fixed width for the search bar */
+}
+
+/* Input Field Styling */
+.filter-input {
+    padding: 15px 40px; /* Padding for input */
+    border-radius: 25px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border styling */
+    font-size: 18px; /* Font size for input */
+    width: 100%; /* Full width of the search container */
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+.filter-input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #0078FF; /* Change border color on focus */
+}
+
+/* Icon Styling */
+.search-icon {
+    position: absolute; /* Position the icon absolutely */
+    left: 15px; /* Adjust position to the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center the icon vertically */
+    color: #888; /* Set icon color */
+    pointer-events: none; /* Disable pointer events on the icon */
+}
+
+/* Table Styling */
+.stock-table {
+    width: 100%; /* Keep the table width at 100% of the container */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px; /* Increase the font size */
+    color: #333;
+}
+
+.stock-table th {
+    background-color: #0078FF;
+    color: white;
+    padding: 20px; /* Increase padding for larger size */
+    text-transform: uppercase;
+    font-size: 14px; /* Increase font size for headers */
+}
+
+.stock-table td {
+    padding: 20px; /* Increase padding for larger cells */
+    border: 1px solid #ddd;
+    font-size: 16px; /* Increase font size for cells */
+}
+
+.stock-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for rows */
+.stock-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .stock-table-container {
+        width: 100%; /* Make the table full width on small screens */
+    }
+
+    .filter-input {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

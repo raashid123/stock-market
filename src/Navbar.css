@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #0078FF; /* Navbar background color */
+    padding: 15px 20px; /* Increased padding for better spacing */
+    color: white; /* Text color */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between title and search bar */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    position: absolute; /* Fixed position for navbar at the top */
+    top: 0; /* Ensure it is fixed at the top */
+    left: 0; /* Align to the left */
+    width: 1657.5px; /* Full width */
+    
+}
+
+
+/* Additional styles for headings, buttons, etc. remain unchanged */
+
+
+
+/* Additional styling for the main content area */
+.content {
+    padding-top: 40px; /* Space for the fixed navbar */
+} 
+
+.main-heading {
+    font-family: 'Times New Roman', Times, serif; /* Heading font style */
+    font-size: 36px; /* Font size for main heading */
+    margin: 20px 0 10px; /* Spacing around the heading */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px ;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+

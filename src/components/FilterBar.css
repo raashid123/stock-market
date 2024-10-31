@@ -1,0 +1,25 @@
+.filter-bar {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .filter-bar span {
+    font-weight: bold;
+  }
+  
+  .filter-bar button {
+    background-color: #f0f0f0;
+    color: #2e73e0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .filter-bar button.active {
+    background-color: #2e73e0;
+    color: white;
+  }
+  

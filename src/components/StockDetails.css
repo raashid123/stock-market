@@ -1,0 +1,178 @@
+/* Container for the whole details page */
+.stock-details-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 100px auto; /* Center the content */
+    font-family: 'Roboto', serif;
+}
+
+.company-name {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #000000;
+}
+
+/* Two-column grid where the left column is for Price Summary and Buy/Sell Recommendations, 
+   and the right column is for Company Essentials */
+.stock-details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2/3 for left and 1/3 for right */
+    gap: 20px;
+}
+
+/* Left column styling for Price Summary and Buy/Sell Recommendations */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the cards */
+    margin-bottom: 10px;
+    width: 700px;
+}
+
+/* Styling for each card */
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card header styling */
+.card h3 {
+    text-decoration: underline;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.card h2 {
+    text-decoration: underline;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Detail row for arranging labels and values */
+.detail-row {
+    display: flex; 
+    justify-content: space-between; /* Space between each label-value pair */
+ 
+}
+
+/* Recommendation grid for Buy/Sell Recommendations */
+.recommendation-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+
+}
+
+/* Company essentials grid for arranging labels and values */
+.company-essentials-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Space between grid items */
+    width: 600px;
+}
+
+/* Individual label-value pair styling */
+.label-value {
+    display: flex;
+    flex-direction: column; /* Stack label and value vertically */
+    align-items: center; /* Center align label and value */
+    width: 100%; /* Full width for labels and values */
+}
+
+/* Label styling */
+.label {
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px; /* Adjust label font size as needed */
+}
+
+/* Value styling */
+.value {
+    color: #000000;
+    margin-top: 15px;
+    font-size: 14px; /* Adjust value font size as needed */
+}
+
+/* Right column styling for Company Essentials */
+.company-essentials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Adding hover effect for better UI experience */
+.card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Power BI Visualization Section */
+.powerbi-visualization {
+    grid-column:span 2; /* to display on both the sides*/
+    background-color: #f8f9fa; /* Light background for better contrast */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    text-align: center;
+  }
+  
+  .powerbi-visualization h3 {
+    font-size: 2rem;
+    color: #000000; /* Darker text color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  /* The container that will hold the Power BI report */
+  .powerbi-visualization div {
+    border: 1px solid #ced4da; /* Border around the Power BI report */
+    border-radius: 8px;
+    width: 100%; /* Full width inside the container */
+    height: 500px; /* Fixed height for the report */
+    overflow: hidden; /* Ensures no overflowing content */
+  }
+
+  
+  /* Adjust for smaller screens */
+  @media (max-width: 768px) {
+    .powerbi-visualization {
+      padding: 15px;
+      margin-top: 15px;
+    }
+  
+    .powerbi-visualization h3 {
+      font-size: 2.5rem;
+    }
+  
+    .powerbi-visualization div {
+      height: 400px; /* Slightly smaller height for mobile */
+    }
+  }
+  
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .stock-details-grid {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+    }
+
+    .left-column, .company-essentials {
+        flex-direction: column;
+    }
+
+    .company-name {
+        font-size: 28px;
+    }
+
+    /* Adjust company essentials grid for smaller screens */
+    .company-essentials-grid {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+    }
+}

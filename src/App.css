@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+/* Styling for HomePage */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif; /* Change font style */
+  font-size: 4.5rem; /* Adjust font size */
+  font-weight: 700;
+  word-spacing: 2%;
+  margin-bottom: 15px; /* Remove default margin */
+}
+
+.animation-container {
+  margin: 40px 0;
+}
+
+.get-started-btn {
+  background-color: #FCB82A;
+  border: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  color: white;
+  border-radius: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  background-color: #CF821E; /* Darker color on hover */
+}
+
+/* NEXT PAGE */
+
